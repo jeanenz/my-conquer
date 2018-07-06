@@ -9,6 +9,7 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
 }
 
+/*Set up top nav*/
 header {
 	background: #383E4C;
 	margin: 0;
@@ -41,13 +42,16 @@ nav a:hover, a:active {
 	background-color: #49505F;
 }
 
-.beauty {
-	text-align: center;
-    position: relative;
+/*Set up parallax effect*/
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
-.beauty-text {
-	position: absolute;
+.parallax .text {
+	position: relative;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -55,25 +59,14 @@ nav a:hover, a:active {
 	text-align: center;
 }
 
-/*.beauty img {
-	width: 100%;
-	margin-bottom: -30px;
-	margin-top: -170px;
-	z-index: -50;
-	position: relative;
-	object-fit: cover;
-}*/
-
-.parallax {
+.beauty {
 	background-image: url("../img/bg-1.jpg");
 	height: 97%;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	text-align: center;
+    position: relative;
 }
 
-h1 {
+.beauty h1 {
 	text-transform: uppercase;
 	font-weight: normal;
 	font-size: 70px;
@@ -81,11 +74,34 @@ h1 {
 	margin: 0;
 }
 
-h2 {
+.beauty h2 {
 	font-weight: normal;
 	margin: 0;
 }
 
+.services {
+	background-image: url("../img/bg-2.jpg");
+	height: 50%;
+	text-align: center;
+    position: relative;
+}
+
+.services h2 {
+	font-weight: normal;
+	font-size: 36px;
+	text-shadow:2px 2px 4px #aaa;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.services p {
+	font-size: 18px;
+	line-height: 1.6em;
+	width: 50%;
+	margin: auto;
+}
+
+/*Set up thumbnails / columns */
 .thumbnails {
 	width: 85%;
 	margin: 30px auto;
