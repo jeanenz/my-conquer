@@ -9,6 +9,15 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
 }
 
+a {
+	text-decoration: none;
+	color: #337ab7;
+}
+
+a:hover {
+	color: #23527c;
+}
+
 /*Set up top nav*/
 header {
 	background: #383E4C;
@@ -103,7 +112,7 @@ nav a:hover, a:active {
 
 /*Set up thumbnails / columns */
 .thumbnails {
-	width: 85%;
+	width: 86%;
 	margin: 30px auto;
 	display: flex;
 	flex-flow: row;
@@ -112,8 +121,87 @@ nav a:hover, a:active {
 .thumbnails .item {
 	margin: 15px;
 	background-color: #F2F2F2;
+	color: #333333;
 }
 
-.thumbnails h3, p, .button {
-	padding: 0 15px;
+.item h2 {
+	color: #666666;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.item p {
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+.thumbnails h2, p, .button {
+	padding: 0 10px;
+	margin: 12px;
+}
+
+/*Button set up*/
+.button {
+	background-color: #ffffff;
+	width: 150px;
+	height: 50px;
+	margin: 30px auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	font-size: 18px;
+	-webkit-transition: background-color .3s; /* Safari */
+    transition: background-color .3s;
+}
+
+.button a {
+	color: #ffffff;
+}
+
+/*Set up 3 column details*/
+.green h2 {
+	color: #178A27;
+}
+
+.blue h2 {
+	color: #1686C1;
+}
+
+.red h2 {
+	color: #852406;
+}
+
+.green .button {
+	background-color: #178A27;
+}
+
+.green .button:hover {
+	background-color: #449D44;
+}
+
+.blue .button {
+	background-color: #1686C1;
+}
+
+.blue .button:hover {
+	background-color: #31B0D5;
+}
+
+.red .button {
+	background-color: #852406;
+}
+
+.red .button:hover {
+	background-color: #C9302C;
+}
+
+/*Two Column set up*/
+.two-column p {
+	padding: 0 17px;
+}
+.two-column h2 {
+	text-align: center;
+	margin-bottom: 35px;
 }
