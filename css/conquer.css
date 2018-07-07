@@ -112,16 +112,18 @@ nav a:hover, a:active {
 
 /*Set up thumbnails / columns */
 .thumbnails {
-	width: 86%;
+	width: 87%;
 	margin: 30px auto;
 	display: flex;
-	flex-flow: row;
+	flex-flow: row wrap;
+	/*align-content: center;*/
 }
 
 .thumbnails .item {
 	margin: 15px;
 	background-color: #F2F2F2;
 	color: #333333;
+	flex: 0 2 auto;
 }
 
 .item h2 {
@@ -140,6 +142,10 @@ nav a:hover, a:active {
 	margin: 12px;
 }
 
+.three .item {
+	max-width: 360px;
+}
+
 /*Button set up*/
 .button {
 	background-color: #ffffff;
@@ -150,17 +156,27 @@ nav a:hover, a:active {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 5px;
 	font-size: 18px;
 	-webkit-transition: background-color .3s; /* Safari */
     transition: background-color .3s;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }
 
 .button a {
-	color: #ffffff;
+	color: #666666;
 }
 
 /*Set up 3 column details*/
+.three .button {
+	border: none;
+	border-radius: 5px;
+}
+
+.three .button a {
+	color: #ffffff;
+}
+
 .green h2 {
 	color: #178A27;
 }
@@ -198,10 +214,29 @@ nav a:hover, a:active {
 }
 
 /*Two Column set up*/
-.two-column p {
+.two {
+	max-width: 555px;
+	flex: 0 2 auto;
+}
+.two p {
 	padding: 0 17px;
 }
-.two-column h2 {
+.two h2 {
 	text-align: center;
 	margin-bottom: 35px;
+}
+
+/*Four Column set up*/
+.four {
+	max-width: 260px;
+	flex: 0 2 auto;
+}
+
+.four h2 {
+	text-align: center;
+}
+
+.four .button {
+	width: 100px;
+	margin: 20px auto;
 }
