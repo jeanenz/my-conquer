@@ -110,6 +110,71 @@ nav a:hover, a:active {
 	margin: auto;
 }
 
+.contact {
+	background-image: url("../img/bg-3.jpg");
+	height: 100%;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	text-align: center;
+    position: relative;
+}
+
+.contact h2 {
+	font-weight: normal;
+	font-size: 36px;
+	text-shadow: 2px 2px 4px #000000;
+	margin: 0;
+	color: #ffffff;
+}
+
+.contact .text {
+	width: 50%;
+	color: #000000;
+}
+
+.contact p {
+	background-color: rgba(242,242,242,0.4);
+	padding: 30px;
+	border-radius: 5px;
+	margin: 30px 0 20px 0;
+}
+
+form {
+	display: flex;
+	flex-flow: row;
+}
+
+form div {
+	flex: 1;
+}
+
+input, textarea {
+	background-color: rgba(242,242,242,0.4);
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	border: none;
+	color: #000000;
+	box-sizing: border-box;
+	margin: 20px 0 0 0;
+}
+
+textarea {
+	height: 100%;
+}
+
+.inputs {
+	margin: 0 30px 0 0 ;
+}
+
+.area {
+	float:left;
+}
+
+::placeholder {
+	color: #000000;
+}
+
 /*Set up thumbnails / columns */
 .thumbnails {
 	width: 87%;
@@ -239,4 +304,8 @@ nav a:hover, a:active {
 .four .button {
 	width: 100px;
 	margin: 20px auto;
+}
+
+.one .button {
+	margin: 20px;
 }
